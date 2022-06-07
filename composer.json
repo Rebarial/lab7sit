@@ -1,0 +1,17 @@
+{
+    "name": "reber/lab7",
+    "type": "project",
+    "config": {
+        "platform": {
+            "php": "7.4.3"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

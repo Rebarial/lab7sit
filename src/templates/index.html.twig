@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Хранилище книг</title>
+</head>
+<body>
+<br>
+<l6 style="margin: 60px">Title</l6>
+<l6 style="margin: 40px">Description</l6>
+<br>
+<form action="/" method="GET">
+    <input name="title">
+    <input name="desc">
+    <input type="submit" value="Отправить">
+</form>
+<br>
+{% for data in data %}
+    <div style="border: solid">
+        <div class="table-cell">{{data.title}}</div>
+        <div class="table-cell">{{data.description}}</div>
+    </div>
+    <br>
+{% endfor %}
+</body>
+</html>
